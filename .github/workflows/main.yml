@@ -1,0 +1,19 @@
+name: Simple CI
+
+on:
+  push:
+    branches:
+      - main  # replace with your branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Print a greeting
+      run: echo "Hello, this is a sample GitHub Action!"
+
+    # You can add more steps as needed for your workflow
