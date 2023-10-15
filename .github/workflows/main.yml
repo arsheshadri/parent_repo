@@ -17,6 +17,8 @@ jobs:
       run: echo "Hello, this is a sample GitHub Action!"
 
     - name: Checkout code from another repository
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
         git clone https://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:x-oauth-basic@github.com/arsheshadri/child_repo.git
 
