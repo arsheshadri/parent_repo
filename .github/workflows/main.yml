@@ -16,4 +16,7 @@ jobs:
     - name: Print a greeting
       run: echo "Hello, this is a sample GitHub Action!"
 
-    # You can add more steps as needed for your workflow
+    - name: Checkout code from another repository
+      run: |
+        git clone https://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:x-oauth-basic@github.com/arsheshadri/child_repo.git
+
