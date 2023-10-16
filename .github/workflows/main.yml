@@ -23,4 +23,6 @@ jobs:
         git clone --branch v1.0 https://${{ secrets.YOUR_SECRET_NAME }}:x-oauth-basic@github.com/arsheshadri/child_repo.git
 
     - name: Readme
-      run: cat README.md
+      run: |
+        cd child_repo
+        cat README.md
