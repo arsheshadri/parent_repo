@@ -20,7 +20,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
-        git clone --branch ${{ vars.TAG_VERSION }} https://${{ secrets.YOUR_SECRET_NAME }}:x-oauth-basic@github.com/arsheshadri/child_repo.git
+        git clone --branch ${{ vars.TAG_VERSION }} https://${{ secrets.ACCESS_TOKEN }}:x-oauth-basic@github.com/arsheshadri/child_repo.git
 
     - name: Readme
       run: |
