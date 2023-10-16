@@ -20,5 +20,5 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
-        git clone https://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:x-oauth-basic@github.com/arsheshadri/child_repo.git
+        git clone https://${{ secrets.YOUR_SECRET_NAME }}:x-oauth-basic@github.com/arsheshadri/child_repo.git
 
